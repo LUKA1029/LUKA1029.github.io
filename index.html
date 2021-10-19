@@ -42,6 +42,16 @@
  </h1>
      
     <button onclick="copyUrl()"><h3>◉共有</h3></button>
+     <script type="text/javascript">
+    function copyUrl() {
+    const element = document.createElement('input');
+    element.value = location.href;
+    document.body.appendChild(element);
+    element.select();
+    document.execCommand('copy');
+    document.body.removeChild(element);
+}
+   </script>
      <h2>LUKA BOY Channel の公式サイトです</h2>
     <p>
     　　旧ホームページは<a href="https://lukaboy2098.wixsite.com/lukaboy">こちら</a>  <br> 
