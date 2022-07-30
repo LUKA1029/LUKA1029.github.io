@@ -26,7 +26,7 @@ LUKA BOY Channel Official
 
 <div class="g-ytsubscribe" data-channelid="UCEHB3UmEtM_TLHqFjyRcxyA" data-layout="full" data-count="default"></div>
 
-<a href="https://lukaboy2098-github-io.translate.goog/homepage/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=nui"><h4>English version　by Google translate</h4></a>     <a href="https://lukaboy2098-github-io.translate.goog/homepage/?_x_tr_sl=ja&_x_tr_tl=id&_x_tr_hl=ja&_x_tr_pto=nui"></a>
+<a href="https://lukaboy2098-github-io.translate.goog/homepage/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=nui">English version　by Google translate</a>   
 
 
 
