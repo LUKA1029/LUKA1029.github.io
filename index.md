@@ -92,6 +92,8 @@ LUKA BOY Channel の公式サイトです
 
 ### 変更ログ（詳細情報は[こちら](https://bit.ly/3jjMdns)）
 
+	<div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px; background-color: #99ff99;"> 
+	
 2021/10/18  
 ・　このサイトを公開しました。  
 ・　URLの誤りを修正しました。  
