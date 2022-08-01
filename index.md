@@ -42,7 +42,7 @@ LUKA BOY Channel Official
             Your browser does not support the
             <code>audio</code> element.
     </audio>
-</figure>
+</figure><br>
   ​<figure>
     <figcaption>Listen to the BGM:</figcaption>
     <audio
