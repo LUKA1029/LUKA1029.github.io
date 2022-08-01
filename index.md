@@ -60,17 +60,8 @@ LUKA BOY Channel の公式サイトです
    
    このチャンネルの目標は、少しでも皆さんに楽しんでいただける動画や役に立つ動画をアップロードすることです。
 チャンネル登録もよろしくお願いします。
-　
-      </div>
-	<h2>androidで動くアプリファイル(apk)<br>
-	<h3>本格的には2030年公開予定です。</h3><br>
-	<img src="apple-touch-icon-180×180.png" width="70"><br>
-	<p>このサイトを見ることしかできないアプリ</p><br>
-	<a href="https://github.com/LUKABOY2098/LUKA2098.github.io/raw/main/LUKABOY%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%202.0.zip">ZIP形式</a><br>
-	<a href="https://github.com/LUKABOY2098/LUKA2098.github.io/raw/main/app-release.apk">apk</a><br>
-	<a href="https://play.google.com/store/nourl">GooglePlay(未配布)</a>
-	</div>
-変更ログは [こちら](https://bit.ly/3jjMdns) に移動しました/div>
+このページのバージョン履歴(変更ログ)は [こちら](https://bit.ly/3jjMdns) です。
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnhs9ErSkJ-N1MYrfIAt51UB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnjNoRYw6RtnXHoQCU6zJ1nR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
