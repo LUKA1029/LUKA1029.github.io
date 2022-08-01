@@ -35,19 +35,26 @@ LUKA BOY Channel Official
   Listen to the Dreaming On - NEFFEX: <br> ​
     <audio
         controls
-               controls loop  preload="metadata"  src="Dreaming On - NEFFEX.mp3">
+                 preload="metadata"  src="Dreaming On - NEFFEX.mp3">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
 <br>
-  Listen to the BGM:<br>
+  Listen to the Cango（feat. Harelo12) - andiricum2:<br>
     <audio
         controls
-                controls loop  preload="metadata"  src="music.mp3">
+                  preload="metadata"  src="Cango(feat. Harelo12).mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio><br>
+Listen to the Cango（feat. Harelo12) - andiricum2:<br>
+    <audio
+        controls
+                  preload="metadata"  src="
+×MinecraftMy World (feat. Frankieredhots)">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
-
 
 
 LUKA BOY Channel の公式サイトです
