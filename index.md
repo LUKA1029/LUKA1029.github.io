@@ -32,7 +32,7 @@ LUKA BOY Channel Official
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSKkV7nnGQtc8G0jyWo21pFHXZa2BU51KXqO0YM1BW8_-o083YNhfyDPFWlHiBhPKK6fpreutapUlXM/embed?start=true&loop=true&delayms=2000" frameborder="0" width="1280" height="720" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/e3ZeIArgwvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe><br>
-  Listen to the Dreaming On - NEFFEX:  ​
+  Listen to the Dreaming On - NEFFEX: <br> ​
     <audio
         controls
                controls loop  preload="metadata"  src="Dreaming On - NEFFEX.mp3">
@@ -40,7 +40,7 @@ LUKA BOY Channel Official
             <code>audio</code> element.
     </audio>
 <br>
-  Listen to the BGM:
+  Listen to the BGM:<br>
     <audio
         controls
                 controls loop  preload="metadata"  src="music.mp3">
