@@ -20,7 +20,7 @@ LUKA BOY Channel Official
 
 <div class="g-ytsubscribe" data-channelid="UCEHB3UmEtM_TLHqFjyRcxyA" data-layout="full" data-count="default"></div>
 
-<a href="[https://koutayoshida2098-github-io.translate.goog/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp]">English version　by Google translate</a>   
+[https://koutayoshida2098-github-io.translate.goog/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp]English version　by Google translate  
 
 
 
