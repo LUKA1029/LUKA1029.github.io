@@ -10,7 +10,6 @@ title: LUKA BOY Channel Official
 
 <link rel="apple-touch-icon" href="./apple-touch-icon.png" sizes="180x180">
 
-<link rel="shortcut icon" type="image/x-icon" href="path/to/favicon.ico">
 
 <meta name="”description”" content="”LUKABOYChannelの公式サイトです。他にもandroidで動くアプリを配布する予定です。”">
 
