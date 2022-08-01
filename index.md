@@ -38,7 +38,7 @@ LUKA BOY Channel Official
     <figcaption>Listen to the Dreaming On - NEFFEX:</figcaption>
     <audio
         controls
-            controlslist="nodownload"    controls loop  preload="metadata"  src="Dreaming On - NEFFEX.mp3">
+               controls loop  preload="metadata"  src="Dreaming On - NEFFEX.mp3">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
@@ -47,7 +47,7 @@ LUKA BOY Channel Official
     <figcaption>Listen to the BGM:</figcaption>
     <audio
         controls
-            controlslist="nodownload"    controls loop  preload="metadata"  src="music.mp3">
+                controls loop  preload="metadata"  src="music.mp3">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
