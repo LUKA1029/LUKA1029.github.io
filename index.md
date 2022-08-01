@@ -71,7 +71,7 @@ LUKA BOY Channel の公式サイトです
 	<a href="https://github.com/LUKABOY2098/LUKA2098.github.io/raw/main/app-release.apk">apk</a><br>
 	<a href="https://play.google.com/store/nourl">GooglePlay(未配布)</a>
 	</div>
-変更ログは[こちら](https://bit.ly/3jjMdns)に移動しました</div>
+変更ログは [こちら](https://bit.ly/3jjMdns) に移動しました/div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnhs9ErSkJ-N1MYrfIAt51UB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnjNoRYw6RtnXHoQCU6zJ1nR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
