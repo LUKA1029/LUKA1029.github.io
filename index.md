@@ -8,9 +8,6 @@ title: LUKA BOY Channel Official
 
 <title>LUKA BOY Channel Official</title>
 
-<link rel="apple-touch-icon" href="./apple-touch-icon.png" sizes="180x180">
-
-
 <meta name="”description”" content="”LUKABOYChannelの公式サイトです。他にもandroidで動くアプリを配布する予定です。”">
 
 
@@ -74,13 +71,12 @@ LUKA BOY Channel の公式サイトです
 
 ### チャンネルの説明 
 
-<div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px; background-color: #99ff99;"> 
+<div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;> 
    
    このチャンネルの目標は、少しでも皆さんに楽しんでいただける動画や役に立つ動画をアップロードすることです。
 チャンネル登録もよろしくお願いします。
 　
       </div>
-<div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px; background-color: #99ff99;">
 	<h2>androidで動くアプリファイル(apk)<br>
 	<h3>本格的には2030年公開予定です。</h3><br>
 	<img src="apple-touch-icon-180×180.png" width="70"><br>
@@ -89,7 +85,6 @@ LUKA BOY Channel の公式サイトです
 	<a href="https://github.com/LUKABOY2098/LUKA2098.github.io/raw/main/app-release.apk">apk</a><br>
 	<a href="https://play.google.com/store/nourl">GooglePlay(未配布)</a>
 	</div>
-<div style="padding: 10px; margin-bottom: 10px; border: 5px double #333333; border-radius: 10px; background-color: #009999; color: #ffffff;">  
 変更ログは[こちら](https://bit.ly/3jjMdns)に移動しました</div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnhs9ErSkJ-N1MYrfIAt51UB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
