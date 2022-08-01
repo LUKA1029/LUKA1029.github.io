@@ -54,20 +54,6 @@ Listen to the Minecraft My World (feat. Frankieredhots)- Nolo Flows yo:<br>
 
 LUKA BOY Channel の公式サイトです
 -------------------------
-<h1>
-    <div style="padding: 10px; margin-bottom: 10px; border: 1px dotted #333333; border-radius: 5px; background-color: #009999; color: #ffffff;">
-     <a href="https://m.youtube.com/channel/UCEHB3UmEtM_TLHqFjyRcxyA?sub_confirmation=1" "target="_blank" rel="noopener noreferrer">チャンネル登録　</a> 
-</div> <br> 
-<div style="padding: 10px; margin-bottom: 10px; border: 1px dotted #333333; border-radius: 5px; background-color: #009999; color: #ffffff;">
-    <a href="https://lukaboy2098.github.io/homepage/" "target="_blank" rel="noopener noreferrer">ホームページ　</a> 
-</div>  <br>  
-<div style="padding: 10px; margin-bottom: 10px; border: 1px dotted #333333; border-radius: 5px; background-color: #009999; color: #ffffff;">
-    <a href="https://forms.gle/mGd3MoozbjWcco6NA" "target="_blank" rel="noopener noreferrer">意見はこちらから　</a>
-</div>  <br> 
-<div style="padding: 10px; margin-bottom: 10px; border: 1px dotted #333333; border-radius: 5px; background-color: #009999; color: #ffffff;">
-    <a href="https://github.com/LUKABOY2098" "target="_blank" rel="noopener noreferrer">githubのページ　</a>
-</div>  <br> 
- </h1>
 
 ### チャンネルの説明 
 
