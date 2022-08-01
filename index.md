@@ -25,7 +25,7 @@ LUKA BOY Channel Official
 
 <div class="g-ytsubscribe" data-channelid="UCEHB3UmEtM_TLHqFjyRcxyA" data-layout="full" data-count="default"></div>
 
-<a href="[https://koutayoshida2098-github-io.translate.goog/HP/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp](https://koutayoshida2098-github-io.translate.goog/HP/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)">English version　by Google translate</a>   
+<a href="[https://koutayoshida2098-github-io.translate.goog/HP/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp]([https://koutayoshida2098-github-io.translate.goog/HP/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp](https://koutayoshida2098-github-io.translate.goog/HP/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp))">English version　by Google translate</a>   
 
 
 
@@ -34,7 +34,7 @@ LUKA BOY Channel Official
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e3ZeIArgwvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe><br>
     ​
 ​<figure>
-    <figcaption>Listen to the Dreaming On - NEFFEX:</figcaption>
+    Listen to the Dreaming On - NEFFEX:
     <audio
         controls
                controls loop  preload="metadata"  src="Dreaming On - NEFFEX.mp3">
@@ -43,7 +43,7 @@ LUKA BOY Channel Official
     </audio>
 </figure><br>
   ​<figure>
-    <figcaption>Listen to the BGM:</figcaption>
+    <figcaption>Listen to the BGM:
     <audio
         controls
                 controls loop  preload="metadata"  src="music.mp3">
