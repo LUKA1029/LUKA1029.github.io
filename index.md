@@ -25,7 +25,7 @@ LUKA BOY Channel Official
 
 <div class="g-ytsubscribe" data-channelid="UCEHB3UmEtM_TLHqFjyRcxyA" data-layout="full" data-count="default"></div>
 
-<a href="https://lukaboy2098-github-io.translate.goog/HP/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=nui">English version　by Google translate</a>   
+<a href="[https://lukaboy2098-github-io.translate.goog/HP/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=nui](https://koutayoshida2098-github-io.translate.goog/HP/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)">English version　by Google translate</a>   
 
 
 
@@ -88,30 +88,6 @@ LUKA BOY Channel の公式サイトです
 	<a href="https://play.google.com/store/nourl">GooglePlay(未配布)</a>
 	</div>
 <div style="padding: 10px; margin-bottom: 10px; border: 5px double #333333; border-radius: 10px; background-color: #009999; color: #ffffff;">  
-
-### 変更ログ（詳細情報は[こちら](https://bit.ly/3jjMdns)）
-
-	<div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px; background-color: #99ff99;"> 
-	
-2021/10/18  
-・　このサイトを公開しました。  
-・　URLの誤りを修正しました。  
-・　デザインを少し変えました。  
-・　次回は再生リストが追加されます。  
-2021/10/19  
-・　見やすくしました。  
-・　共有ボタンのためにJavascriptを実装しました。おすとURLがコピーされます。（Javascriptは見えません）  
-2021/10/20  
-・　現在の日付と時刻を表示するようにしました。＊JavaScriptです。（特に意味はありません）  
-・　真剣衰弱のゲームを追加しました。ソースコードは[こちら](http://www.west-mira.jp/javascript/html/4/16/lib_game/sinkei1/)より  
-2021/10/21  
-・　apk（androidで動くアプリファイル）置き場を作りました。本格的になるのは2030年の予定です。  
-・　このサイトを見たりすることしかできませんが、androidOSでのみ動くapkを上記の場所で配布しています。  
-見ること以外には、タスクバー(時計や通知などがあるところ)が緑になります。  
-ぜひご利用ください。  
-2022/3/7  
-・真剣衰弱を削除しました。  
-・計算ドリルを追加しました。  
 変更ログは[こちら](https://bit.ly/3jjMdns)に移動しました</div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnhs9ErSkJ-N1MYrfIAt51UB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
