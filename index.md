@@ -40,21 +40,21 @@ LUKA BOY Channel Official
             <code>audio</code> element.
     </audio>
 <br>
-  Listen to the Cango（feat. Harelo12) - andiricum2:<br>
-    <audio
-        controls
-                  preload="metadata"  src="Cango(feat. Harelo12).mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio><br>
+
 Listen to the Minecraft My World (feat. Frankieredhots)- Nolo Flows yo:<br>
     <audio
         controls
                   preload="metadata"  src="Minecraft My World (feat. Frankieredhots)- Nolo Flows yo.mp4">
             Your browser does not support the
             <code>audio</code> element.
+    </audio> <br>
+ Listen to the Cango（feat. Harelo12) - andiricum2:<br>
+    <audio
+        controls
+                  preload="metadata"  src="Cango(feat. Harelo12).mp3">
+            Your browser does not support the
+            <code>audio</code> element.
     </audio>
-
 
 LUKA BOY Channel の公式サイトです
 -------------------------
