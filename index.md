@@ -32,25 +32,24 @@ LUKA BOY Channel Official
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSKkV7nnGQtc8G0jyWo21pFHXZa2BU51KXqO0YM1BW8_-o083YNhfyDPFWlHiBhPKK6fpreutapUlXM/embed?start=true&loop=true&delayms=2000" frameborder="0" width="100%" height="315" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e3ZeIArgwvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe><br>
-    ​
-​<figure>
-    Listen to the Dreaming On - NEFFEX:
+  Listen to the Dreaming On - NEFFEX:  ​
+Listen to the Dreaming On - NEFFEX:
+    
     <audio
         controls
                controls loop  preload="metadata"  src="Dreaming On - NEFFEX.mp3">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
-</figure><br>
-  ​<figure>
-    <figcaption>Listen to the BGM:
+<br>
+  Listen to the BGM:
     <audio
         controls
                 controls loop  preload="metadata"  src="music.mp3">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
-</figure>
+
 
 
 LUKA BOY Channel の公式サイトです
