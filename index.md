@@ -27,7 +27,7 @@ LUKA BOY Channel Official
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSKkV7nnGQtc8G0jyWo21pFHXZa2BU51KXqO0YM1BW8_-o083YNhfyDPFWlHiBhPKK6fpreutapUlXM/embed?start=true&loop=true&delayms=2000" frameborder="0" width="100%" height="720" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-<iframe width="100%" height="720" src="https://www.youtube.com/embed/e3ZeIArgwvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e3ZeIArgwvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
   Listen to the Dreaming On - NEFFEX: <br> ​
     <audio
         controls
