@@ -4,7 +4,6 @@ title: LUKA BOY Channel Official
 ---
 <meta charset="UTF-8">
 
-<body bgcolor="#99ff99" text="#000000"></body>
 
 <title>LUKA BOY Channel Official</title>
 
