@@ -54,11 +54,8 @@ Listen to the Minecraft My World (feat. Frankieredhots)- Nolo Flows yo:<br>
 LUKA BOY Channel の公式サイトです
 -------------------------
 
-### チャンネルの説明 
-
-<div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;> 
-   
-   このチャンネルの目標は、少しでも皆さんに楽しんでいただける動画や役に立つ動画をアップロードすることです。
+### チャンネルの説明    
+このチャンネルの目標は、少しでも皆さんに楽しんでいただける動画や役に立つ動画をアップロードすることです。
 チャンネル登録もよろしくお願いします。
 このページのバージョン履歴(変更ログ)は [こちら](https://bit.ly/3jjMdns) です。
 
