@@ -89,6 +89,3 @@ LUKA BOY Channel の公式サイトです
 <iframe src=" https://docs.google.com/forms/d/e/1FAIpQLSdZPuTarCZNdqBqWZV0jW0E4Pz37EwmRhk-93uTMVd8ph_zig/viewform?embedded = true " width=" 100%" height=" 100% " frameborder=" 0 " marginheight=" " marginwidth=" 0 ">ここで…</ iframe>
 </body>
  </iframe>
-
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61eca9b27fc4371c"></script>
