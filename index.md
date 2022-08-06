@@ -70,6 +70,6 @@ LUKA BOY Channel の公式サイトです
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnj6wzU7EZF25OZH-4Rb9H1V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-<iframe src=" https://docs.google.com/forms/d/e/1FAIpQLSdZPuTarCZNdqBqWZV0jW0E4Pz37EwmRhk-93uTMVd8ph_zig/viewform?embedded = true " width=" 100%" height=" 100% " frameborder=" 0 " marginheight=" " marginwidth=" 0 ">ここで…</ iframe>
+<iframe src=" https://docs.google.com/forms/d/e/1FAIpQLSdZPuTarCZNdqBqWZV0jW0E4Pz37EwmRhk-93uTMVd8ph_zig/viewform?embedded = true " width=" 100%" height=" 600 " frameborder=" 0 " marginheight=" " marginwidth=" 0 ">ここで…</ iframe>
 </body>
  </iframe>
