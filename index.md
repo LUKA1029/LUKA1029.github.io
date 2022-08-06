@@ -6,7 +6,7 @@ title: LUKA BOY Channel Official
 LUKA BOY Channel Official
 =========================  
 
-前のオリジナル壁紙のスライドショー
+前のスキンのオリジナル壁紙スライドショー
 =================
 
 <script src="https://apis.google.com/js/platform.js"></script>
