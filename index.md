@@ -5,9 +5,9 @@ title: LUKA BOY Channel Official
 <meta charset="UTF-8">
 
 
-<title>LUKA BOY Channel Official</title>
+<title>☆LUKA BOY Channel☆</title>
 
-<meta name="”description”" content="”LUKABOYChannelの公式サイトです。他にもandroidで動くアプリを配布する予定です。”">
+<meta name="”description”" content="”☆LUKA BOY Channel☆の公式サイトです。このチャンネルの目標は、少しでも皆さんに楽しんでいただける動画や役に立つ動画をアップロードすることです。”">
 
 
 LUKA BOY Channel Official
