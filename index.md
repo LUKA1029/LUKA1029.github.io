@@ -16,7 +16,6 @@ LUKA BOY Channel Official
 前のオリジナル壁紙のスライドショー
 =================
 
-<script src="https://apis.google.com/js/platform.js"></script>
 
 <div class="g-ytsubscribe" data-channelid="UCEHB3UmEtM_TLHqFjyRcxyA" data-layout="full" data-count="default"></div><br>
 
