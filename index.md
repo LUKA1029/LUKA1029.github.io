@@ -2,13 +2,6 @@
 layout: default
 title: LUKA BOY Channel Official
 ---
-<meta charset="UTF-8">
-
-
-<title>☆LUKA BOY Channel☆</title>
-
-<meta name="”description”" content="”☆LUKA BOY Channel☆の公式サイトです。このチャンネルの目標は、少しでも皆さんに楽しんでいただける動画や役に立つ動画をアップロードすることです。”">
-
 
 LUKA BOY Channel Official
 =========================  
