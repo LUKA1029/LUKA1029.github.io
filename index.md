@@ -6,16 +6,14 @@ title: LUKA BOY Channel Official
 LUKA BOY Channel Official
 =========================  
 
-前のスキンのオリジナル壁紙スライドショー
-=================
-
 <script src="https://apis.google.com/js/platform.js"></script>
 
 <div class="g-ytsubscribe" data-channelid="UCEHB3UmEtM_TLHqFjyRcxyA" data-layout="full" data-count="default"></div><br>
 
 [English version　by Google translate](https://koutayoshida2098-github-io.translate.goog/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)
 
-
+前のスキンのオリジナル壁紙スライドショー
+=================
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSKkV7nnGQtc8G0jyWo21pFHXZa2BU51KXqO0YM1BW8_-o083YNhfyDPFWlHiBhPKK6fpreutapUlXM/embed?start=true&loop=true&delayms=2000" frameborder="0" width="100%" height="720" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
