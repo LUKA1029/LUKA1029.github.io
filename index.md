@@ -13,10 +13,6 @@ LUKA BOY Channel Official
 
 <div class="g-ytsubscribe" data-channelid="UCEHB3UmEtM_TLHqFjyRcxyA" data-layout="full" data-count="default"></div><br>
 
-<script src="https://apis.google.com/js/platform.js"></script>
-
-<div class="g-ytsubscribe" data-channelid="UCtTn9PUw9MPvDowhz7O81FQ" data-layout="full" data-count="default"></div>
-
 [English version　by Google translate](https://koutayoshida2098-github-io.translate.goog/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)
 
 
