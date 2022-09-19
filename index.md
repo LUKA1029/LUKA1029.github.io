@@ -12,10 +12,10 @@ LUKA BOY Channel Official
 
 [English version　by Google translate](https://koutayoshida2098-github-io.translate.goog/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)
 
-前のスキンのオリジナル壁紙スライドショー
+オリジナル壁紙スライドショー
 =================
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSKkV7nnGQtc8G0jyWo21pFHXZa2BU51KXqO0YM1BW8_-o083YNhfyDPFWlHiBhPKK6fpreutapUlXM/embed?start=true&loop=true&delayms=2000" frameborder="0" width="100%" height="720" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQebqBAQTC-eObznBHjIeTJstl65hXLU1C-AVoC2qjxRaj6f9IlpS_KCRZyxIALK9njo_3A8dE0tJ6n/embed?start=true&loop=true&delayms=1000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-AJhyTMwyaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 Listen to the Listen to the Just Breathing - NEFFEX: <br> 
