@@ -1,9 +1,9 @@
 ---
 layout: default
-title: LUKA BOY Channel Official
+title: LUKA BOY Channel Official Page
 ---
 
-LUKA BOY Channel Official
+LUKA BOY Channel Official Page
 =========================  
 
 <script src="https://apis.google.com/js/platform.js"></script>
