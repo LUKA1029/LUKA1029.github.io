@@ -56,9 +56,13 @@ LUKA BOY Channel の公式サイトです
 
 # チャンネルの説明    
 こんにちは😃　このチャンネルの動画を投稿しているKOUTAです。
+
 好きなゲームは、minecraftです。Planet Minecraft Communityで僕の作ったワールドやスキンを投稿しています。
+
 得意なことは、プログラミングです。今は、ScratchやC++の勉強をしています。
+
 Youtubeのチャンネル登録もお願いします。
+
 このページのバージョン履歴(変更ログ)は [こちら](https://github.com/kouta2098/kouta2098.github.io/commits/main/index.md) です。
 
 # Youtubeの再生リスト
