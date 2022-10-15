@@ -1,16 +1,16 @@
 ---
 layout: default
-title: LUKA BOY Channel Official Page
+title: LUKA BOY Channel Home Page
 ---
 
-LUKA BOY Channel Official Page
+LUKA BOY Channel ホームページ
 =========================  
 
 <script src="https://apis.google.com/js/platform.js"></script>
 
 <div class="g-ytsubscribe" data-channelid="UCEHB3UmEtM_TLHqFjyRcxyA" data-layout="full" data-count="default"></div><br>
 
-[English version　by Google translate](https://koutayoshida2098-github-io.translate.goog/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)
+[English version　by Google translate](https://kouta2098-github-io.translate.goog/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)
 
 オリジナル壁紙スライドショー
 =================
