@@ -23,7 +23,7 @@ LUKA BOY Channel ホームページ
 LUKA BOY Channel のテーマミュージック
 -------------------------
 
-Listen to the Listen to the Just Breathing - NEFFEX: <br> 
+Just Breathing - NEFFEX: <br> 
   <audio
         controls
                  preload="metadata"  src="Just Breathing - NEFFEX.mp3">
@@ -31,7 +31,7 @@ Listen to the Listen to the Just Breathing - NEFFEX: <br>
             <code>audio</code> element.
     </audio>
 <br>
-Listen to the Dreaming On - NEFFEX: <br> ​
+Dreaming On - NEFFEX: <br> ​
     <audio
         controls
                  preload="metadata"  src="Dreaming On - NEFFEX.mp3">
@@ -40,14 +40,14 @@ Listen to the Dreaming On - NEFFEX: <br> ​
     </audio>
 <br>
 
-Listen to the Minecraft My World (feat. Frankieredhots)- Nolo Flows yo:<br>
+Minecraft My World (feat. Frankieredhots)- Nolo Flows yo:<br>
     <audio
         controls
                   preload="metadata"  src="Minecraft My World (feat. Frankieredhots)- Nolo Flows yo.mp4">
             Your browser does not support the
             <code>audio</code> element.
     </audio> <br>
- Listen to the Cango（feat. Harelo12) - andiricum2:<br>
+Cango（feat. Harelo12) - andiricum2:<br>
     <audio
         controls
                   preload="metadata"  src="Cango(feat. Harelo12).mp3">
