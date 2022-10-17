@@ -23,6 +23,14 @@ LUKA BOY Channel ホームページ
 LUKA BOY Channel のテーマミュージック
 -------------------------
 
+Monody (Bimonte Remix)（feat. ローラ・ブレーム） <br> 
+  <audio
+        controls
+                 preload="metadata"  src="Monody (Bimonte Remix)（feat. ローラ・ブレーム）.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+<br>
 Just Breathing - NEFFEX: <br> 
   <audio
         controls
