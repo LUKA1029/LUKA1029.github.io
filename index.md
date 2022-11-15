@@ -23,45 +23,7 @@ LUKA BOY Channel ホームページ
 LUKA BOY Channel のテーマミュージック
 -------------------------
 
-Monody (Bimonte Remix)（feat. ローラ・ブレーム） <br> 
-  <audio
-        controls
-                 preload="metadata"  src="Monody (Bimonte Remix)（feat. ローラ・ブレーム）.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-<br>
-Just Breathing - NEFFEX: <br> 
-  <audio
-        controls
-                 preload="metadata"  src="Just Breathing - NEFFEX.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-<br>
-Dreaming On - NEFFEX: <br> ​
-    <audio
-        controls
-                 preload="metadata"  src="Dreaming On - NEFFEX.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-<br>
-
-Minecraft My World (feat. Frankieredhots)- Nolo Flows yo:<br>
-    <audio
-        controls
-                  preload="metadata"  src="Minecraft My World (feat. Frankieredhots)- Nolo Flows yo.mp4">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio> <br>
-Cango（feat. Harelo12) - andiricum2:<br>
-    <audio
-        controls
-                  preload="metadata"  src="Cango(feat. Harelo12).mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3BaGMDJOD0bWnco0fqf4f8?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 LUKA BOY Channel の公式サイトです
 -------------------------
