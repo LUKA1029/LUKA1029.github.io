@@ -41,6 +41,15 @@ Youtubeのチャンネル登録もお願いします。
 
 # planet minecraft
 
+<a href="https://www.planetminecraft.com/skin/green-boy-5534754/" title="Green Boy Minecraft Skin"><br /><img src="https://static.planetminecraft.com/files/resource_media/preview/skinseedskin-1648710053374-15551573-minecraft-skin.jpg" alt="Green Boy" border="0"/><br/>Green Boy</a> by <a href="https://www.planetminecraft.com/member/kouta2098/" title="KOUTA2098 Profile">KOUTA2098</a>
+
+<a href="https://www.planetminecraft.com/project/a-world-with-lots-of-buildings/" title="A world with lots of buildings  Bedrock Edition Minecraft Map"><br /><img src="https://static.planetminecraft.com/files/image/minecraft/project/2022/843/15553192-screenshot-a_l.jpg" alt="A world with lots of buildings  Bedrock Edition" border="0"/><br/>A world with lots of buildings  Bedrock Edition</a> by <a href="https://www.planetminecraft.com/member/kouta2098/" title="KOUTA2098 Profile">KOUTA2098</a>
+
+<a href="https://www.planetminecraft.com/project/a-world-with-lots-of-buildings-java-edition/" title="A world with lots of buildings JAVA Edition Minecraft Map"><br /><img src="https://static.planetminecraft.com/files/image/minecraft/project/2022/859/16091763-screenshot-am-l_l.jpg" alt="A world with lots of buildings JAVA Edition" border="0"/><br/>A world with lots of buildings JAVA Edition</a> by <a href="https://www.planetminecraft.com/member/kouta2098/" title="KOUTA2098 Profile">KOUTA2098</a>
+
+<a href="https://www.planetminecraft.com/project/modern-house-by-kouta/" title="Modern house by KOUTA Bedrock Edition Minecraft Map"><br /><img src="https://static.planetminecraft.com/files/image/minecraft/project/2022/423/16091700_l.jpg" alt="Modern house by KOUTA Bedrock Edition" border="0"/><br/>Modern house by KOUTA Bedrock Edition</a> by <a href="https://www.planetminecraft.com/member/kouta2098/" title="KOUTA2098 Profile">KOUTA2098</a>
+
+<a href="https://www.planetminecraft.com/project/modern-house-by-kouta-java-edition/" title="Modern house by KOUTA JAVA Edition Minecraft Map"><br /><img src="https://static.planetminecraft.com/files/image/minecraft/project/2022/934/16091753_l.jpg" alt="Modern house by KOUTA JAVA Edition" border="0"/><br/>Modern house by KOUTA JAVA Edition</a> by <a href="https://www.planetminecraft.com/member/kouta2098/" title="KOUTA2098 Profile">KOUTA2098</a>
 
 
 # Youtubeの再生リスト
