@@ -41,25 +41,7 @@ Youtubeのチャンネル登録もお願いします。
 
 # planet minecraft
 
-[url=https://www.planetminecraft.com/skin/green-boy-5534754/][img]https://static.planetminecraft.com/files/resource_media/preview/skinseedskin-1648710053374-15551573-minecraft-skin.jpg[/img]
 
-Green Boy[/url] by [mn=3917786]KOUTA2098[/mn]
-
-[url=https://www.planetminecraft.com/project/a-world-with-lots-of-buildings/][img]https://static.planetminecraft.com/files/image/minecraft/project/2022/843/15553192-screenshot-a_l.jpg[/img]
-
-A world with lots of buildings  Bedrock Edition[/url] by [mn=3917786]KOUTA2098[/mn]
-
-[url=https://www.planetminecraft.com/project/a-world-with-lots-of-buildings-java-edition/][img]https://static.planetminecraft.com/files/image/minecraft/project/2022/859/16091763-screenshot-am-l_l.jpg[/img]
-
-A world with lots of buildings JAVA Edition[/url] by [mn=3917786]KOUTA2098[/mn]
-
-[url=https://www.planetminecraft.com/project/modern-house-by-kouta/][img]https://static.planetminecraft.com/files/image/minecraft/project/2022/423/16091700_l.jpg[/img]
-
-Modern house by KOUTA Bedrock Edition[/url] by [mn=3917786]KOUTA2098[/mn]
-
-[url=https://www.planetminecraft.com/project/modern-house-by-kouta-java-edition/][img]https://static.planetminecraft.com/files/image/minecraft/project/2022/934/16091753_l.jpg[/img]
-
-Modern house by KOUTA JAVA Edition[/url] by [mn=3917786]KOUTA2098[/mn]
 
 # Youtubeの再生リスト
 ### 【Minecraft】NEW! 変身アドオンでサバイバル　Survival with a morph add-on
