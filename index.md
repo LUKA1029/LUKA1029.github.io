@@ -7,7 +7,6 @@ LUKA BOY Channel ホームページ
 =========================  
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
-
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62e760309fa529a0"></script>
 
 <script src="https://apis.google.com/js/platform.js"></script>
@@ -17,9 +16,8 @@ LUKA BOY Channel ホームページ
 
 <div class="g-ytsubscribe" data-channelid="UCZ9VD9sYMQCWbB_gwyacmFw" data-layout="full" data-count="default"></div>
 
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
-
-                <div class="addthis_inline_share_toolbox"></div>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox"></div>
 
             
 
