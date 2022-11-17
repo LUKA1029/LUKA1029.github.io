@@ -54,10 +54,15 @@ Youtubeのチャンネル登録もお願いします。
 
 <a href="https://www.planetminecraft.com/project/modern-house-by-kouta-java-edition/" title="Modern house by KOUTA JAVA Edition Minecraft Map"><br /><img src="https://static.planetminecraft.com/files/image/minecraft/project/2022/934/16091753_l.jpg" alt="Modern house by KOUTA JAVA Edition" border="0"/><br/>Modern house by KOUTA JAVA Edition</a> by <a href="https://www.planetminecraft.com/member/kouta2098/" title="KOUTA2098 Profile">KOUTA2098</a>
 
-# ライブ配信
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnjcL336xzSNuHpZnjV5W0Sa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 # Youtubeの再生リスト
+### ライブ配信
+<iframe width="960" height="540" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnjcL336xzSNuHpZnjV5W0Sa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### 【LUKA BOY Channel】#うたってみた
+<iframe width="960" height="540" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnimhPMtOe4jISPdvlNct73o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### 【Minecraft】NEW! 変身アドオンでサバイバル　Survival with a morph add-on
 <iframe width="960" height="540" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnhs9ErSkJ-N1MYrfIAt51UB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
