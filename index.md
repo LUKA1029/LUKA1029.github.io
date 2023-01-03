@@ -17,6 +17,8 @@ LUKA BOY Channel ホームページ
 
 [English version　by Google translate](https://kouta2098-github-io.translate.goog/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)
 
+<a class="twitter-timeline" data-height="500" data-theme="dark" href="https://twitter.com/KOUTA2098?ref_src=twsrc%5Etfw">Tweets by KOUTA2098</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 オリジナル壁紙スライドショー
 =================
 
