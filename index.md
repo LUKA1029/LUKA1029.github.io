@@ -11,7 +11,9 @@ LUKA BOY Channel ホームページ
 <div class="g-ytsubscribe" data-channelid="UCEHB3UmEtM_TLHqFjyRcxyA" data-layout="full" data-count="default"></div>
 <script src="https://apis.google.com/js/platform.js"></script>
 
-<div class="g-ytsubscribe" data-channelid="UCZ9VD9sYMQCWbB_gwyacmFw" data-layout="full" data-count="default"></div>            
+<div class="g-ytsubscribe" data-channelid="UCZ9VD9sYMQCWbB_gwyacmFw" data-layout="full" data-count="default"></div> 
+
+<a href="https://twitter.com/KOUTA2098?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @KOUTA2098</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 [English version　by Google translate](https://kouta2098-github-io.translate.goog/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)
 
