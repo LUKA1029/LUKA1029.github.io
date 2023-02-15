@@ -1,92 +1,33 @@
 ---
 layout: default
-title: LUKA BOY Channel Home Page
+title: ルカ/LUKA's Ch Home Page
 ---
 
-LUKA BOY Channel ホームページ
+ルカ/LUKA's Ch Home Page
 =========================  
+[Please translate into japanese]https://kouta2098-github-io.translate.goog/?_x_tr_sl=en&_x_tr_tl=ja&_x_tr_hl=ja
 
 <script src="https://apis.google.com/js/platform.js"></script>
 
 <div class="g-ytsubscribe" data-channelid="UCEHB3UmEtM_TLHqFjyRcxyA" data-layout="full" data-count="default"></div>
-<script src="https://apis.google.com/js/platform.js"></script>
-
-<div class="g-ytsubscribe" data-channelid="UCZ9VD9sYMQCWbB_gwyacmFw" data-layout="full" data-count="default"></div> 
 
 <a href="https://twitter.com/KOUTA2098?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @KOUTA2098</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-[English version　by Google translate](https://kouta2098-github-io.translate.goog/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)
-
 <a class="twitter-timeline" data-height="500" data-theme="dark" href="https://twitter.com/KOUTA2098?ref_src=twsrc%5Etfw">Tweets by KOUTA2098</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-オリジナル壁紙スライドショー
-=================
+# about me
+Hello😆 This is LUKA.
+On Youtube and TikTok, I call myself LUKA for some reason. On Twitter, I call myself Kouta.
+I'm going to do Zundamon commentary mainly.
+Please subscribe to our channel and follow us on Twitter and TikTok😆
+
+↓Favorite animal (dog)
+🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕
+
+# Theme music for this channel
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3BaGMDJOD0bWnco0fqf4f8?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+# Original Pictures Slideshow
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQebqBAQTC-eObznBHjIeTJstl65hXLU1C-AVoC2qjxRaj6f9IlpS_KCRZyxIALK9njo_3A8dE0tJ6n/embed?start=true&loop=true&delayms=1000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-<iframe width="960" height="540" src="https://www.youtube.com/embed/Er30BXbTp7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="960" height="540" src="https://www.youtube.com/embed/tFVAnsvfzKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-LUKA BOY Channel のテーマミュージック
--------------------------
-
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3BaGMDJOD0bWnco0fqf4f8?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-LUKA BOY Channel の公式サイトです
--------------------------
-
-# チャンネルの説明    
-こんにちは😃　このチャンネルの動画を投稿しているKOUTAです。
-
-好きなゲームは、minecraftです。Planet Minecraft Communityで僕の作ったワールドやスキンを投稿しています。
-
-得意なことは、プログラミングです。今は、ScratchやC++の勉強をしています。
-
-Youtubeのチャンネル登録もお願いします。
-
-このページのバージョン履歴(変更ログ)は [こちら](https://github.com/kouta2098/kouta2098.github.io/commits/main/index.md) です。
-
-# planet minecraft
-
-<a href="https://www.planetminecraft.com/skin/green-boy-5534754/" title="Green Boy Minecraft Skin"><br /><img src="https://static.planetminecraft.com/files/resource_media/preview/skinseedskin-1648710053374-15551573-minecraft-skin.jpg" alt="Green Boy" border="0"/><br/>Green Boy</a> by <a href="https://www.planetminecraft.com/member/kouta2098/" title="KOUTA2098 Profile">KOUTA2098</a>
-
-<a href="https://www.planetminecraft.com/project/a-world-with-lots-of-buildings/" title="A world with lots of buildings  Bedrock Edition Minecraft Map"><br /><img src="https://static.planetminecraft.com/files/image/minecraft/project/2022/843/15553192-screenshot-a_l.jpg" alt="A world with lots of buildings  Bedrock Edition" border="0"/><br/>A world with lots of buildings  Bedrock Edition</a> by <a href="https://www.planetminecraft.com/member/kouta2098/" title="KOUTA2098 Profile">KOUTA2098</a>
-
-<a href="https://www.planetminecraft.com/project/a-world-with-lots-of-buildings-java-edition/" title="A world with lots of buildings JAVA Edition Minecraft Map"><br /><img src="https://static.planetminecraft.com/files/image/minecraft/project/2022/859/16091763-screenshot-am-l_l.jpg" alt="A world with lots of buildings JAVA Edition" border="0"/><br/>A world with lots of buildings JAVA Edition</a> by <a href="https://www.planetminecraft.com/member/kouta2098/" title="KOUTA2098 Profile">KOUTA2098</a>
-
-<a href="https://www.planetminecraft.com/project/modern-house-by-kouta/" title="Modern house by KOUTA Bedrock Edition Minecraft Map"><br /><img src="https://static.planetminecraft.com/files/image/minecraft/project/2022/423/16091700_l.jpg" alt="Modern house by KOUTA Bedrock Edition" border="0"/><br/>Modern house by KOUTA Bedrock Edition</a> by <a href="https://www.planetminecraft.com/member/kouta2098/" title="KOUTA2098 Profile">KOUTA2098</a>
-
-<a href="https://www.planetminecraft.com/project/modern-house-by-kouta-java-edition/" title="Modern house by KOUTA JAVA Edition Minecraft Map"><br /><img src="https://static.planetminecraft.com/files/image/minecraft/project/2022/934/16091753_l.jpg" alt="Modern house by KOUTA JAVA Edition" border="0"/><br/>Modern house by KOUTA JAVA Edition</a> by <a href="https://www.planetminecraft.com/member/kouta2098/" title="KOUTA2098 Profile">KOUTA2098</a>
-
-
-
-# Youtubeの再生リスト
-### ライブ配信
-<iframe width="960" height="540" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnjcL336xzSNuHpZnjV5W0Sa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### 【LUKA BOY Channel】#うたってみた
-<iframe width="960" height="540" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnimhPMtOe4jISPdvlNct73o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### 【Minecraft】NEW! 変身アドオンでサバイバル　Survival with a morph add-on
-<iframe width="960" height="540" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnhs9ErSkJ-N1MYrfIAt51UB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-### 【新しい順】minecraft 犬くんワールド Inukun world
-<iframe width="960" height="540" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnjNoRYw6RtnXHoQCU6zJ1nR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-### minecraft
-<iframe width="960" height="540" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnhwQwYNiAFnCq-pzaIZL9tL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-### minecraft アドオン
-<iframe width="960" height="540" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnh96q69aV6YiLHjh6tSfnTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-### 脱獄ごっこ
-<iframe width="960" height="540" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnjlBZTyiBUJXrX5uNsFLwXO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-### スリザリオ
-<iframe width="960" height="540" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugniX8Wg7irOZ6dNAAkgUkN7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-### minecraft 配布ワールド
-<iframe width="960" height="540" src="https://www.youtube.com/embed/videoseries?list=PLOWM8jMIugnj6wzU7EZF25OZH-4Rb9H1V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-<iframe src=" https://docs.google.com/forms/d/e/1FAIpQLSdZPuTarCZNdqBqWZV0jW0E4Pz37EwmRhk-93uTMVd8ph_zig/viewform?embedded = true " width=" 100%" height="650" frameborder=" 0 " marginheight=" " marginwidth=" 0 ">ここで…</ iframe>
-</body>
- </iframe>
