@@ -5,7 +5,6 @@ title: ルカ/LUKA's Ch Home Page
 
 ルカ/LUKA's Ch Home Page
 =========================  
-[Please translate into japanese]https://kouta2098-github-io.translate.goog/?_x_tr_sl=en&_x_tr_tl=ja&_x_tr_hl=ja
 
 <script src="https://apis.google.com/js/platform.js"></script>
 
