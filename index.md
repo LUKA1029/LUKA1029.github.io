@@ -11,7 +11,7 @@ title: ルカ/LUKA's Ch Home Page
 <div class="g-ytsubscribe" data-channelid="UCEHB3UmEtM_TLHqFjyRcxyA" data-layout="full" data-count="default"></div>
 
 # Highlight
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/6WD83XqPB-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="256" src="https://www.youtube.com/embed/6WD83XqPB-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # About me
 Hello😆 This is LUKA.
