@@ -14,14 +14,8 @@ title: ルカ/LUKA's Ch Home Page
 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6WD83XqPB-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # About me
-Hello😆 This is LUKA.
-On Youtube and TikTok, I call myself LUKA for some reason. On Twitter, I call myself Kouta.
-I'm going to do Zundamon commentary mainly.
-Please subscribe to our channel and follow us on Twitter and TikTok😆
-
-↓Favorite animal (dog)
-🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕
-
+Hello 😆 My name is LUKA.  
+Please subscribe to my YouTube channel and follow me on Twitter and TikTok.
 # Theme music for this channel
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3BaGMDJOD0bWnco0fqf4f8?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
