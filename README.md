@@ -1,2 +1,1 @@
-こんにちは😆　LUKAです。  
-Youtubeのチャンネル登録とTwitter・TikTokのフォローもよろしくお願いします
+This is my home page.
