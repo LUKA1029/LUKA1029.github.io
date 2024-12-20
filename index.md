@@ -15,7 +15,7 @@ title: ルカ/LUKA's Ch Home Page
 <a class="twitter-timeline" data-height="500" data-theme="dark" href="https://twitter.com/KOUTA2098?ref_src=twsrc%5Etfw">Tweets by KOUTA2098</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # Highlight
-<iframe height="315" src="https://www.youtube.com/embed/6WD83XqPB-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/6WD83XqPB-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # About me
 Hello😆 This is LUKA.
