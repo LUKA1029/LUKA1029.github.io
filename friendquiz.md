@@ -1,4 +1,4 @@
 #Friend Quiz  
-［Friend Quiz ver.1］(https://friendquiz.me/quiz/9DFhg8Tr)  
-［Friend Quiz ver.2］(https://friendquiz.me/quiz/sp8XTHqd)  
-［Friend Quizのクイズ募集中］(https://friendquiz.me/suggest/feX9hTyN)
+ <a href="Friend Quiz">https://friendquiz.me/quiz/9DFhg8Tr</a>  
+<a href="https://friendquiz.me/quiz/sp8XTHqd">Friend Quiz ver.2</a>  
+<a href="https://friendquiz.me/suggest/feX9hTyN">Friend Quizのクイズ募集中</a>
