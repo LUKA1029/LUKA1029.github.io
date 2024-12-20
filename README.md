@@ -1,1 +1,2 @@
-This is LUKA1029's Home Page.
+こんにちは😆　LUKAです。
+Youtubeのチャンネル登録とTwitter・TikTokのフォローもよろしくお願いします
