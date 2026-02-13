@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Backrooms Survival - Refined UI</title>
+    <style>
+        :root { 
+            --bg-yellow: #d4c894; --carpet: #7a6c4a; --ui-text: #f0e8c0; 
+            --ui-bg: rgba(25, 22, 15, 0.95); --danger: #b33; --panel-border: #4a4433;
+        }
+        html, body { 
+            position: fixed; width: 100%; height: 100%; overflow: hidden; 
+            background: #111; margin: 0; padding: 0;
+            user-select: none; touch-action: none; font-family: 'Consolas', monospace;
+        }
+        #main-container { height: 100%; display: flex; flex-direction: column; }
+        
+        /* ゲーム画面エリア */
+        #viewport { 
+            flex: 1; position: relative; background: #000; border-bottom: 4px solid var(--panel-border);
+            display: flex; align-items: center; justify-content: center;
+        }
+        canvas { width: 100%; height: 100%; image-rendering: pixelated; }
+
+        /* HUD & チート (オーバーレイ) */
+        #hud { 
+            position: absolute; top: 10px; left: 10px; color: var(--ui-text); z-index: 10; 
+            background: var(--ui-bg); padding: 8px; border: 1px solid var(--panel-border); font-size: 12px;
+        }
+        #cheat-bar { 
+            position: absolute; top: 10px; right: 10px; z-index: 10; display: flex; gap: 5px; 
+        }
+        .c-btn { 
+            background: #222; border: 1px solid #444; color: #666; font-size: 9px; padding: 4px 6px; border-radius: 2px;
+        }
+        .c-btn.active { border-color: #0f0; color: #0f0; box-shadow: 0 0 5px #0f0; }
+
+        /* 操作パネルエリア */
+        #input-panel { 
+            height: 200px; background: #1a1812; display: flex; justify-content: space-between; align-items: center; padding: 0 20px;
+        }
+
+        /* 移動ボタン（左側） */
+        .d-pad { display: grid; grid-template-areas: ". up ." "left down right"; gap: 5px; }
+        .ctrl-btn { 
+            width: 55px; height: 55px; background: #332f24; border: 2px solid #4a4433; color: var(--ui-text);
+            display: flex; align-items: center; justify-content: center; border-radius: 8px; font-weight: bold;
+        }
+        .ctrl-btn:active { background: #5c523d; transform: scale(0.95); }
+        #btn-up { grid-area: up; } #btn-left { grid-area: left; } #btn-right { grid-area: right; } #btn-down { grid-area: down; }
+
+        /* アクションボタン（右側） */
+        #action-zone { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+        .fire-btn { 
+            width: 90px; height: 90px; background: #5a2222; border: 4px solid #833; color: #fff;
+            border-radius: 50%; font-weight: bold; font-size: 18px; box-shadow: 0 4px 0 #300;
+        }
+        .fire-btn:active { transform: translateY(3px); box-shadow: 0 1px 0 #300; background: #833; }
+
+        /* メッセージ */
+        .overlay { position: absolute; inset: 0; background: var(--ui-bg); display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 50; color: var(--ui-text); text-align: center; }
+        .start-btn { padding: 15px 40px; background: var(--carpet); border: 2px solid var(--bg-yellow); color: #fff; font-size: 20px; cursor: pointer; }
+        #flash { position: absolute; inset: 0; pointer-events: none; z-index: 5; }
+    </style>
+</head>
+<body>
+
+<div id="main-container">
+    <div id="viewport">
+        <canvas id="gameCanvas" width="320" height="200"></canvas>
+        <div id="hud">
+            LV: <span id="lv-txt" style="color:#fff;">1</span><br>
+            SANITY: <span id="score-txt" style="color:#fff;">100</span> / <span id="goal-txt">500</span>
+        </div>
+        <div id="cheat-bar">
+            <button id="god-btn" class="c-btn">GOD</button>
+            <button id="speed-btn" class="c-btn">SPD</button>
+            <button id="kill-btn" class="c-btn" style="color:#b33;">KILL</button>
+        </div>
+        <div id="flash"></div>
+
+        <div id="title-screen" class="overlay">
+            <h1 style="letter-spacing: 5px;">THE BACKROOMS</h1>
+            <button class="start-btn" onclick="initGame()">DEPLOY</button>
+        </div>
+        
+        <div id="msg-overlay" class="overlay" style="display:none;">
+            <h2 id="msg-title">NEXT LEVEL</h2>
+            <p id="msg-body"></p>
+            <button class="start-btn" onclick="startCurrentLevel()">NEXT</button>
+        </div>
+    </div>
+
+    <div id="input-panel">
+        <div class="d-pad">
+            <div id="btn-up" class="ctrl-btn">W</div>
+            <div id="btn-left" class="ctrl-btn">A</div>
+            <div id="btn-right" class="ctrl-btn">D</div>
+            <div id="btn-down" class="ctrl-btn">S</div>
+        </div>
+        <div id="action-zone">
+            <button id="btn-fire" class="fire-btn">FIRE</button>
+            <span style="color:#4a4433; font-size:10px;">ACTION UNIT</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+    const W = 320, H = 200, BS = 64;
+
+    let state = {
+        isPlaying: false, level: 1, score: 100, goal: 500,
+        player: { x: 96, y: 96, dir: 0, shootAnim: 0 },
+        enemies: [], items: [], keys: {}, zBuffer: new Array(W),
+        lastDmg: 0, cheats: { god: false, speed: 1 }
+    };
+
+    const MAP = [
+        [1,1,1,1,1,1,1,1,1,1,1,1],[1,0,0,0,0,1,0,0,0,0,0,1],[1,0,1,1,0,1,0,1,1,1,0,1],
+        [1,0,0,0,0,0,0,0,0,1,0,1],[1,1,1,1,0,1,1,1,0,0,0,1],[1,0,0,0,0,1,0,0,0,1,1,1],
+        [1,0,1,1,1,1,0,1,0,0,0,1],[1,0,0,0,0,0,0,1,1,1,0,1],[1,1,1,0,1,1,0,0,0,0,0,1],
+        [1,0,0,0,0,1,0,1,1,1,0,1],[1,0,1,1,0,0,0,0,0,0,0,1],[1,1,1,1,1,1,1,1,1,1,1,1]
+    ];
+
+    function initGame() {
+        state.level = 1; state.score = 100;
+        startCurrentLevel();
+    }
+
+    function startCurrentLevel() {
+        state.goal = state.level * 500;
+        state.player.x = 96; state.player.y = 96;
+        state.enemies = []; state.items = [];
+        for(let i=0; i<8+state.level*4; i++) spawn('enemy');
+        for(let i=0; i<3; i++) spawn('item');
+        document.querySelectorAll('.overlay').forEach(el => el.style.display = 'none');
+        state.isPlaying = true; updateHud();
+    }
+
+    function spawn(type) {
+        let x, y, safe = false;
+        while(!safe) {
+            x = Math.random()*BS*12; y = Math.random()*BS*12;
+            if(MAP[Math.floor(y/BS)][Math.floor(x/BS)]===0 && Math.sqrt((x-state.player.x)**2+(y-state.player.y)**2)>150) safe = true;
+        }
+        if(type === 'enemy') state.enemies.push({ x, y, alive: true, speed: 0.5 + (state.level*0.2) });
+        else state.items.push({ x, y, active: true });
+    }
+
+    function updateHud() {
+        document.getElementById('lv-txt').innerText = state.level;
+        document.getElementById('score-txt').innerText = Math.max(0, Math.floor(state.score));
+        document.getElementById('goal-txt').innerText = state.goal;
+    }
+
+    // --- Inputs ---
+    const bind = (id, k) => {
+        const el = document.getElementById(id);
+        el.onpointerdown = (e) => { e.preventDefault(); state.keys[k] = true; };
+        el.onpointerup = () => state.keys[k] = false;
+        el.onpointerleave = () => state.keys[k] = false;
+    };
+    bind('btn-up', 'w'); bind('btn-down', 's'); bind('btn-left', 'a'); bind('btn-right', 'd');
+
+    const doFire = () => {
+        if (!state.isPlaying || state.player.shootAnim > 0) return;
+        state.player.shootAnim = 10;
+        state.enemies.forEach(e => {
+            if (!e.alive) return;
+            let ang = Math.atan2(e.y-state.player.y, e.x-state.player.x) - state.player.dir;
+            while(ang < -Math.PI) ang += 2*Math.PI; while(ang > Math.PI) ang -= 2*Math.PI;
+            let d = Math.sqrt((e.x-state.player.x)**2+(e.y-state.player.y)**2);
+            if (Math.abs(ang) < 0.35 && d < 450) { e.alive = false; state.score += 25; updateHud(); setTimeout(()=>spawn('enemy'), 5000); }
+        });
+    };
+    document.getElementById('btn-fire').onpointerdown = (e) => { e.preventDefault(); doFire(); };
+
+    // Cheats
+    document.getElementById('god-btn').onclick = function() { state.cheats.god = !state.cheats.god; this.classList.toggle('active'); };
+    document.getElementById('speed-btn').onclick = function() { state.cheats.speed = state.cheats.speed === 1 ? 2.5 : 1; this.classList.toggle('active'); };
+    document.getElementById('kill-btn').onclick = function() { state.enemies.forEach(e=>{if(e.alive){e.alive=false;state.score+=20;}}); updateHud(); };
+
+    function update() {
+        if (!state.isPlaying) return;
+        if (state.score >= state.goal) {
+            state.isPlaying = false; state.level++;
+            document.getElementById('msg-title').innerText = "LEVEL ESCAPED";
+            document.getElementById('msg-body').innerText = `Preparing Level ${state.level}...`;
+            document.getElementById('msg-overlay').style.display = 'flex';
+            return;
+        }
+        let mv = 0;
+        if (state.keys['w']) mv = 4 * state.cheats.speed; if (state.keys['s']) mv = -4 * state.cheats.speed;
+        if (state.keys['a']) state.player.dir -= 0.07; if (state.keys['d']) state.player.dir += 0.07;
+        let nx = state.player.x + Math.cos(state.player.dir)*mv, ny = state.player.y + Math.sin(state.player.dir)*mv;
+        if (MAP[Math.floor(state.player.y/BS)][Math.floor(nx/BS)]===0) state.player.x = nx;
+        if (MAP[Math.floor(ny/BS)][Math.floor(state.player.x/BS)]===0) state.player.y = ny;
+
+        state.items.forEach(it => {
+            if (it.active && Math.sqrt((state.player.x-it.x)**2+(state.player.y-it.y)**2)<40) {
+                it.active = false; state.score += 50; updateHud();
+                setTimeout(()=>it.active=true, 15000);
+            }
+        });
+
+        let now = Date.now();
+        state.enemies.forEach(e => {
+            if(!e.alive) return;
+            let d = Math.sqrt((state.player.x-e.x)**2+(state.player.y-e.y)**2);
+            if(d<500){ e.x += (state.player.x-e.x)/d*e.speed; e.y += (state.player.y-e.y)/d*e.speed; }
+            if(d<30 && now-state.lastDmg>1000 && !state.cheats.god) {
+                state.score -= 20; state.lastDmg = now; updateHud();
+                const f = document.getElementById('flash'); f.style.background = "#f00"; f.style.opacity = 0.5; setTimeout(()=>f.style.opacity=0, 150);
+                if(state.score<=0) location.reload();
+            }
+        });
+        if (state.player.shootAnim > 0) state.player.shootAnim--;
+    }
+
+    function draw() {
+        if (!state.isPlaying) return;
+        ctx.fillStyle = '#e3dac2'; ctx.fillRect(0,0,W,H/2);
+        ctx.fillStyle = '#7a6c4a'; ctx.fillRect(0,H/2,W,H/2);
+
+        for(let x=0; x<W; x++) {
+            let angle = (state.player.dir - 0.5) + (x/W);
+            let rx = Math.cos(angle), ry = Math.sin(angle), d = 0;
+            while(d < 600) { d += 4; if(MAP[Math.floor((state.player.y+ry*d)/BS)][Math.floor((state.player.x+rx*d)/BS)]===1) break; }
+            let dist = d * Math.cos(angle - state.player.dir);
+            state.zBuffer[x] = dist;
+            let h = (BS * H) / (dist + 1);
+            ctx.fillStyle = `rgb(${140-d*0.2}, ${130-d*0.2}, 90)`;
+            ctx.fillRect(x, (H-h)/2, 1, h);
+        }
+
+        // Sprites
+        state.enemies.concat(state.items).forEach(s => {
+            if (s.alive === false || s.active === false) return;
+            let ang = Math.atan2((s.y||0)-state.player.y, (s.x||0)-state.player.x)-state.player.dir;
+            while(ang<-Math.PI) ang+=2*Math.PI; while(ang>Math.PI) ang-=2*Math.PI;
+            let dist = Math.sqrt(((s.x||0)-state.player.x)**2 + ((s.y||0)-state.player.y)**2);
+            if (Math.abs(ang)<0.8) {
+                let sx = (0.5 * (ang/0.5)+0.5)*W, sz = (BS*H)/dist;
+                if (sx>=0 && sx<W && dist < state.zBuffer[Math.floor(sx)]) {
+                    ctx.fillStyle = s.speed ? '#000' : '#0af';
+                    ctx.fillRect(sx-sz/4, (H-sz)/2+sz/4, sz/2, sz/2);
+                    if(s.speed){ ctx.fillStyle="#fff"; ctx.fillRect(sx-sz/8, (H-sz)/2+sz/3, sz/10, 2); ctx.fillRect(sx+sz/20, (H-sz)/2+sz/3, sz/10, 2); }
+                }
+            }
+        });
+
+        // Gun Render
+        let bob = Math.sin(Date.now()/150) * (state.keys['w']||state.keys['s']?6:1);
+        let gx = W/2, gy = H-55+bob+(state.player.shootAnim*5);
+        if(state.player.shootAnim > 7){ ctx.fillStyle="#ff0"; ctx.beginPath(); ctx.arc(gx, gy-25, 12, 0, Math.PI*2); ctx.fill(); }
+        ctx.fillStyle="#222"; ctx.fillRect(gx-10, gy, 20, 60); ctx.fillStyle="#333"; ctx.fillRect(gx-8, gy-25, 16, 40);
+    }
+
+    function loop() { update(); draw(); requestAnimationFrame(loop); }
+    loop();
+</script>
+</body>
+</html>
