@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大山（だいせん）観光・登山完全ガイド</title>
+    <style>
+        :root {
+            --primary-color: #2d5a27; /* 大山の緑 */
+            --accent-color: #f39c12;  /* 紅葉のオレンジ */
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background: white;
+            padding: 0.5rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        main article {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .affiliate-box {
+            border: 2px solid #e0e0e0;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-radius: 5px;
+        }
+
+        .affiliate-btn {
+            background-color: #ff9900; /* Amazonカラー */
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        aside {
+            background: #eee;
+            padding: 1rem;
+            border-radius: 8px;
+            height: fit-content;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>大山観光・登山完全ガイド</h1>
+    <p>鳥取の最高峰、大山の魅力を発信する情報サイト</p>
+</header>
+
+<nav>
+    <a href="#hiking">登山</a>
+    <a href="#sightseeing">観光</a>
+    <a href="#gourmet">グルメ</a>
+    <a href="#hotel">宿泊</a>
+</nav>
+
+<div class="container">
+    <main>
+        <article id="hiking">
+            <h2>【初心者必見】大山・夏山登山コース完全攻略</h2>
+            <p>大山のメインルート「夏山登山コース」の登り方、必要な装備をまとめました。</p>
+            <img src="https://via.placeholder.com/600x300?text=Mt.Daisen+View" alt="大山の景色" style="width:100%; border-radius:8px;">
+            
+            <h3>おすすめの登山用具</h3>
+            <div class="affiliate-box">
+                <div>
+                    <strong>大山・蒜山を歩く (山と高原地図)</strong>
+                    <p>登山に欠かせない詳細マップ。事前にルートを確認しましょう。</p>
+                    <a href="あなたのAmazonリンク" class="affiliate-btn">Amazonでチェック</a>
+                </div>
+            </div>
+        </article>
+
+        <article id="gourmet">
+            <h2>大山に来たら絶対食べるべきグルメ3選</h2>
+            <p>1. 大山まきばみるくの里のソフトクリーム<br>2. 大山そば<br>3. 大山どりの焼き鳥</p>
+            
+            <div class="affiliate-box">
+                <div>
+                    <strong>お取り寄せ：大山おこわ 2合用セット</strong>
+                    <p>大山の郷土料理をご自宅で簡単に楽しめます。</p>
+                    <a href="あなたのAmazonリンク" class="affiliate-btn">Amazonでチェック</a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <aside>
+        <h3>人気記事ランキング</h3>
+        <ul>
+            <li><a href="#">紅葉の見ごろ予想2026</a></li>
+            <li><a href="#">周辺の温泉宿5選</a></li>
+            <li><a href="#">キャンプ場比較まとめ</a></li>
+        </ul>
+        <hr>
+        <p><strong>広告</strong></p>
+        <div style="background:#fff; height:100px; display:flex; align-items:center; justify-content:center; border:1px dashed #ccc;">
+            Amazonバナー広告枠
+        </div>
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2026 大山観光ガイド | Amazonアソシエイト参加サイト</p>
+</footer>
+
+</body>
+</html>
