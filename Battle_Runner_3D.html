@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fortnite x Subway Surfers: Absolute Fixed</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #0b0c10;
+            color: #fff;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            overflow: hidden;
+            touch-action: manipulation;
+        }
+        h1.main-title {
+            margin: 5px 0;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #00d2d3;
+            text-shadow: 0 0 10px rgba(0,210,211,0.5);
+        }
+        #game-container {
+            position: relative;
+            width: 100%;
+            max-width: 360px;
+            aspect-ratio: 360 / 500; 
+            margin: 0 auto;
+        }
+        canvas {
+            background: linear-gradient(to bottom, #1f4068 0%, #16161a 40%, #1a1a2e 100%);
+            border: 3px solid #48dbfb;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+            display: block;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        /* 画面オーバーレイ：z-indexを最強にし、画面全体のどこを触っても反応させる */
+        .overlay-screen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 12, 16, 0.98);
+            border: 3px solid #48dbfb;
+            border-radius: 12px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+            z-index: 99999 !important; /* 絶対最前面 */
+            cursor: pointer;
+        }
+
+        #start-screen {
+            background: radial-gradient(circle, #1f4068 0%, #0b0c10 100%);
+        }
+        .logo-text {
+            font-size: 28px;
+            font-weight: 900;
+            color: #48dbfb;
+            text-shadow: 0 0 15px #48dbfb, 2px 2px #000;
+            margin-bottom: 5px;
+            pointer-events: none;
+        }
+        .sub-logo {
+            font-size: 16px;
+            color: #ff9f43;
+            font-weight: bold;
+            margin-bottom: 40px;
+            pointer-events: none;
+        }
+
+        #instruction-screen {
+            justify-content: flex-start;
+            overflow-y: auto;
+            padding-top: 30px;
+        }
+        .instruction-title {
+            color: #00d2d3;
+            font-size: 20px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #00d2d3;
+            padding-bottom: 5px;
+            width: 100%;
+            pointer-events: none;
+        }
+        .rule-box {
+            background: rgba(255,255,255,0.05);
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 12px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: left;
+            font-size: 13px;
+            line-height: 1.5;
+            pointer-events: none; /* タップを背後の画面全体に通す */
+        }
+        .rule-box strong { color: #ff9f43; }
+
+        /* 見た目だけのボタン（どこを押しても進むので、ただのガイド） */
+        .action-btn-guide {
+            background: #10ac84;
+            color: white;
+            padding: 12px 35px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 25px;
+            box-shadow: 0 4px 0 #0b8463;
+            pointer-events: none; 
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* ゲーム中UI */
+        #ui {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            right: 12px;
+            display: none; 
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 14px;
+            text-shadow: 2px 2px 3px #000;
+            pointer-events: none;
+            z-index: 10;
+        }
+        .stat-box {
+            background: rgba(0, 0, 0, 0.75);
+            padding: 6px 10px;
+            border-radius: 6px;
+            border-left: 4px solid #fff;
+        }
+        #hp-box { border-left-color: #ff6b6b; }
+        #shield-box { border-left-color: #54a0ff; }
+        #wood-box { border-left-color: #ff9f43; }
+        
+        /* コントローラー */
+        .mobile-controls {
+            display: none; 
+            flex-direction: column;
+            width: 100%;
+            max-width: 360px;
+            margin-top: 8px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            gap: 6px;
+        }
+        .control-row {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+        }
+        .btn {
+            flex: 1;
+            background: #1f4068;
+            border: 2px solid #4361ee;
+            color: white;
+            padding: 12px 0;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 10px;
+            text-align: center;
+            user-select: none;
+            -webkit-user-select: none;
+            box-shadow: 0 4px 0 #112233;
+            cursor: pointer;
+        }
+        .btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #112233;
+            background: #4361ee;
+        }
+        #btn-build { background: #e67e22; border-color: #f39c12; box-shadow: 0 4px 0 #d35400; }
+        #btn-build:active { background: #f39c12; box-shadow: 0 2px 0 #d35400; }
+        #btn-shoot { background: #10ac84; border-color: #1dd1a1; box-shadow: 0 4px 0 #0b8463; }
+        #btn-shoot:active { background: #1dd1a1; box-shadow: 0 2px 0 #0b8463; }
+
+        #game-over {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(10, 10, 25, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            display: none;
+            border: 3px solid #ff6b6b;
+            box-shadow: 0 0 20px rgba(255,107,107,0.5);
+            width: 80%;
+            box-sizing: border-box;
+            z-index: 99999 !important;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="main-title">BATTLE RUNNER 3D</h1>
+
+<div id="game-container">
+    
+    <div id="start-screen" class="overlay-screen">
+        <div class="logo-text">BATTLE RUNNER</div>
+        <div class="sub-logo">FORTNITE × SUBWAY SURFERS</div>
+        <div class="action-btn-guide">画面をタップして起動</div>
+    </div>
+
+    <div id="instruction-screen" class="overlay-screen" style="display: none;">
+        <div class="instruction-title">🎮 遊び方説明</div>
+        
+        <div class="rule-box">
+            <strong>【基本ルール：Subway要素】</strong><br>
+            迫る障害物を左右に避けて進むエンドレスランナー！進むほど速度がアップします。
+        </div>
+        
+        <div class="rule-box">
+            <strong>【建築システム：Fortnite要素】</strong><br>
+            避けきれない壁は、<strong>資材を10消費</strong>して階段を「建築」すれば上を飛び越えられます！
+        </div>
+
+        <div class="rule-box">
+            <strong>【ストーム（嵐）システム】</strong><br>
+            警告後、1つのレーンが紫色のストームに包まれます。ダメージを受けるので即退避！
+        </div>
+
+        <div class="rule-box">
+            <strong>【操作方法 (PC / スマホ)】</strong><br>
+            ・レーン移動：← → キー / 画面ボタン<br>
+            ・建築ジャンプ：↑ キー / 建築ボタン<br>
+            ・AR射撃(敵撃破)：Space キー / 射撃ボタン
+        </div>
+        
+        <div class="action-btn-guide" style="margin-top: auto;">画面をタップしてバトル開始！</div>
+    </div>
+    
+    <div id="ui">
+        <div>
+            <div id="hp-box" class="stat-box" style="margin-bottom: 4px;">HP: <span id="hp" style="color: #ff6b6b;">100</span></div>
+            <div id="shield-box" class="stat-box" style="margin-bottom: 4px;">シールド: <span id="shield" style="color: #54a0ff;">50</span></div>
+            <div id="wood-box" class="stat-box">資材: <span id="wood" style="color: #ff9f43;">20</span></div>
+        </div>
+        <div style="text-align: right;">
+            <div class="stat-box" style="border-left-color: #1dd1a1;">SCORE: <span id="score" style="color: #1dd1a1;">0</span></div>
+            <div id="storm-alert" style="color: #a55eea; font-size: 12px; margin-top: 8px; font-weight: bold; display: none;">⚠️ ストーム縮小中！</div>
+        </div>
+    </div>
+    
+    <div id="game-over">
+        <h2 style="color: #ff6b6b; margin: 0 0 10px 0;">#1 敗北</h2>
+        <p style="margin: 5px 0; font-size: 14px;">ストームか障害物に阻まれました。</p>
+        <p style="font-size: 18px; font-weight: bold; margin: 10px 0;">スコア: <span id="final-score">0</span></p>
+        <div class="action-btn-guide">画面をタップして再マッチ</div>
+    </div>
+
+    <canvas id="gameCanvas" width="360" height="500"></canvas>
+</div>
+
+<div id="controls-area" class="mobile-controls">
+    <div class="control-row">
+        <div id="btn-left" class="btn">◀ 左へ</div>
+        <div id="btn-right" class="btn">右へ ▶</div>
+    </div>
+    <div class="control-row">
+        <div id="btn-build" class="btn">🔨 建築 (木10)</div>
+        <div id="btn-shoot" class="btn">💥 AR射撃</div>
+    </div>
+</div>
+
+<script>
+const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+
+let isPlaying = false; 
+let gameActive = false;
+let score = 0;
+let frameCount = 0;
+
+const vpX = 180;        
+const vpY = 160;        
+
+let player = {
+    lane: 1, 
+    hp: 100,
+    shield: 50,
+    wood: 20,
+    jumpFrames: 0,
+    z: 440 
+};
+
+let objects = [];
+let bullets = [];
+
+let stormLane = -1;
+let stormTimer = 0;
+let stormActive = false;
+
+const laneCenters2D = [60, 180, 300];
+
+// --- 🔊 オーディオシステム ---
+let audioCtx = null;
+
+function initAudio() {
+    if (!audioCtx) {
+        try {
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        } catch(e) {
+            console.log("AudioContext error:", e);
+        }
+    }
+    if (audioCtx && audioCtx.state === 'suspended') {
+        audioCtx.resume().catch(e => console.log(e));
+    }
+}
+
+function playSound(type) {
+    if (!audioCtx) return;
+    try {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        const now = audioCtx.currentTime;
+
+        if (type === 'shoot') {
+            osc.type = 'triangle'; osc.frequency.setValueAtTime(400, now);
+            osc.frequency.exponentialRampToValueAtTime(80, now + 0.1);
+            gain.gain.setValueAtTime(0.3, now); gain.gain.linearRampToValueAtTime(0, now + 0.1);
+            osc.start(now); osc.stop(now + 0.1);
+        } else if (type === 'build') {
+            osc.type = 'square'; osc.frequency.setValueAtTime(150, now);
+            osc.frequency.setValueAtTime(200, now + 0.05);
+            gain.gain.setValueAtTime(0.2, now); gain.gain.linearRampToValueAtTime(0, now + 0.12);
+            osc.start(now); osc.stop(now + 0.12);
+        } else if (type === 'item') {
+            osc.type = 'sine'; osc.frequency.setValueAtTime(523.25, now);
+            osc.frequency.setValueAtTime(659.25, now + 0.06);
+            gain.gain.setValueAtTime(0.2, now); gain.gain.linearRampToValueAtTime(0, now + 0.15);
+            osc.start(now); osc.stop(now + 0.15);
+        } else if (type === 'damage') {
+            osc.type = 'sawtooth'; osc.frequency.setValueAtTime(100, now);
+            osc.frequency.linearRampToValueAtTime(30, now + 0.2);
+            gain.gain.setValueAtTime(0.4, now); gain.gain.linearRampToValueAtTime(0, now + 0.2);
+            osc.start(now); osc.stop(now + 0.2);
+        } else if (type === 'move') {
+            osc.type = 'sine'; osc.frequency.setValueAtTime(300, now);
+            osc.frequency.exponentialRampToValueAtTime(450, now + 0.05);
+            gain.gain.setValueAtTime(0.1, now); gain.gain.linearRampToValueAtTime(0, now + 0.05);
+            osc.start(now); osc.stop(now + 0.05);
+        }
+    } catch(e) { console.log(e); }
+}
+
+// --- 🎯 画面全体のどこを押しても進む最強のイベント登録 ---
+let transitionLock = false;
+
+function triggerFirstTransition() {
+    if (transitionLock) return;
+    transitionLock = true;
+    
+    document.getElementById('start-screen').style.display = 'none';
+    document.getElementById('instruction-screen').style.display = 'flex';
+    
+    try { initAudio(); playSound('item'); } catch (e) {}
+    setTimeout(() => { transitionLock = false; }, 300); // 連続誤誤タップ防止
+}
+
+function triggerSecondTransition() {
+    if (transitionLock) return;
+    transitionLock = true;
+
+    document.getElementById('instruction-screen').style.display = 'none';
+    document.getElementById('ui').style.display = 'flex';
+    document.getElementById('controls-area').style.display = 'flex';
+    isPlaying = true;
+    gameActive = true;
+    
+    try { initAudio(); playSound('move'); } catch (e) {}
+    setTimeout(() => { transitionLock = false; }, 300);
+}
+
+function triggerRestart() {
+    resetGame();
+}
+
+// 起動画面の登録（クリック＆タッチ双方）
+const scrStart = document.getElementById('start-screen');
+scrStart.addEventListener('click', triggerFirstTransition);
+scrStart.addEventListener('touchstart', (e) => { e.preventDefault(); triggerFirstTransition(); });
+
+// 説明画面の登録（クリック＆タッチ双方）
+const scrInst = document.getElementById('instruction-screen');
+scrInst.addEventListener('click', triggerSecondTransition);
+scrInst.addEventListener('touchstart', (e) => { e.preventDefault(); triggerSecondTransition(); });
+
+// ゲームオーバー画面の登録（クリック＆タッチ双方）
+const scrGameOver = document.getElementById('game-over');
+scrGameOver.addEventListener('click', triggerRestart);
+scrGameOver.addEventListener('touchstart', (e) => { e.preventDefault(); triggerRestart(); });
+
+
+// 3D位置計算
+function get3DPosition(lane, z) {
+    const scale = Math.max(0.01, z / 500);
+    const x2D = laneCenters2D[lane];
+    const x = vpX + (x2D - vpX) * scale;
+    const y = vpY + (500 - vpY) * scale;
+    return { x, y, scale };
+}
+
+// 操作処理
+function goLeft() { if (gameActive && player.lane > 0) { player.lane--; playSound('move'); } }
+function goRight() { if (gameActive && player.lane < 2) { player.lane++; playSound('move'); } }
+function doBuild() {
+    if (gameActive && player.jumpFrames === 0 && player.wood >= 10) {
+        player.wood -= 10; player.jumpFrames = 20; playSound('build');
+    }
+}
+function doShoot() {
+    if (gameActive) { bullets.push({ lane: player.lane, z: player.z - 20 }); playSound('shoot'); }
+}
+
+window.addEventListener('keydown', (e) => {
+    if (!gameActive) return;
+    if (e.key === 'ArrowLeft' || e.key === 'a') goLeft();
+    if (e.key === 'ArrowRight' || e.key === 'd') goRight();
+    if (e.key === 'ArrowUp' || e.key === 'w') doBuild();
+    if (e.key === ' ' || e.key === 'Spacebar') { e.preventDefault(); doShoot(); }
+});
+
+function bindTouch(id, action) {
+    const el = document.getElementById(id);
+    if(el) {
+        el.addEventListener('touchstart', (e) => { e.preventDefault(); action(); });
+    }
+}
+bindTouch('btn-left', goLeft);
+bindTouch('btn-right', goRight);
+bindTouch('btn-build', doBuild);
+bindTouch('btn-shoot', doShoot);
+
+function spawnObject() {
+    const lane = Math.floor(Math.random() * 3);
+    const rand = Math.random();
+    let type = 'obstacle';
+    if (rand > 0.75) type = 'enemy';
+    else if (rand > 0.55) type = 'wood';
+    else if (rand > 0.40) type = 'shield';
+    
+    objects.push({ lane: lane, z: 0, type: type, speed: 5 + (score / 1500) });
+}
+
+function damagePlayer(amount) {
+    playSound('damage');
+    if (player.shield > 0) {
+        player.shield -= amount;
+        if (player.shield < 0) { player.hp += player.shield; player.shield = 0; }
+    } else { player.hp -= amount; }
+}
+
+function update() {
+    if (!gameActive || !isPlaying) return;
+    
+    frameCount++;
+    score++;
+    
+    stormTimer++;
+    if (!stormActive && stormTimer > 350) {
+        stormActive = true; stormLane = Math.floor(Math.random() * 3);
+        document.getElementById('storm-alert').style.display = 'block'; stormTimer = 0;
+    }
+    if (stormActive && stormTimer > 200) {
+        stormActive = false; stormLane = -1;
+        document.getElementById('storm-alert').style.display = 'none'; stormTimer = 0;
+    }
+    if (stormActive && player.lane === stormLane) { damagePlayer(0.4); }
+    
+    if (player.jumpFrames > 0) player.jumpFrames--;
+    if (frameCount % 35 === 0) spawnObject();
+    
+    bullets.forEach(b => b.z -= 18);
+    bullets = bullets.filter(b => b.z > 0);
+    
+    let nextObjects = [];
+    objects.forEach(obj => {
+        obj.z += obj.speed;
+        let keep = true;
+        
+        if (obj.type === 'enemy') {
+            bullets.forEach((b, bIdx) => {
+                if (b.lane === obj.lane && Math.abs(b.z - obj.z) < 35) {
+                    keep = false; bullets.splice(bIdx, 1);
+                    player.wood += 12; score += 100; playSound('item');
+                }
+            });
+        }
+        
+        if (keep && Math.abs(obj.z - player.z) < 20 && obj.lane === player.lane) {
+            if (obj.type === 'obstacle') {
+                if (player.jumpFrames === 0) { damagePlayer(40); keep = false; }
+            } else if (obj.type === 'enemy') {
+                damagePlayer(25); keep = false;
+            } else if (obj.type === 'wood') {
+                player.wood += 5; keep = false; playSound('item');
+            } else if (obj.type === 'shield') {
+                player.shield = Math.min(100, player.shield + 25); keep = false; playSound('item');
+            }
+        }
+        
+        if (obj.z > 500) keep = false;
+        if (keep) nextObjects.push(obj);
+    });
+    objects = nextObjects;
+    
+    if (player.hp <= 0) {
+        player.hp = 0; gameActive = false;
+        document.getElementById('game-over').style.display = 'block';
+        document.getElementById('final-score').innerText = score;
+    }
+    
+    document.getElementById('hp').innerText = Math.max(0, Math.floor(player.hp));
+    document.getElementById('shield').innerText = Math.floor(player.shield);
+    document.getElementById('wood').innerText = player.wood;
+    document.getElementById('score').innerText = score;
+}
+
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    ctx.fillStyle = '#0f111a';
+    ctx.fillRect(0, vpY, canvas.width, 500 - vpY);
+    
+    ctx.strokeStyle = '#48dbfb'; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(0, vpY); ctx.lineTo(360, vpY); ctx.stroke();
+
+    ctx.strokeStyle = 'rgba(72, 219, 251, 0.15)'; ctx.lineWidth = 1;
+    let speedLineOffset = ((isPlaying ? frameCount : 0) * 6) % 100;
+    for (let zLoop = speedLineOffset; zLoop < 500; zLoop += 80) {
+        let pLine = get3DPosition(1, zLoop);
+        let leftBound = vpX + (0 - vpX) * pLine.scale;
+        let rightBound = vpX + (360 - vpX) * pLine.scale;
+        ctx.beginPath(); ctx.moveTo(leftBound, pLine.y); ctx.lineTo(rightBound, pLine.y); ctx.stroke();
+    }
+
+    const laneEdges = [0, 120, 240, 360];
+    for (let i = 0; i <= 3; i++) {
+        ctx.strokeStyle = '#2c3e50'; ctx.lineWidth = 2;
+        ctx.beginPath(); ctx.moveTo(vpX, vpY);
+        ctx.lineTo(vpX + (laneEdges[i] - vpX) * 1.2, 500); ctx.stroke();
+        
+        if (isPlaying && stormActive && stormLane === i && i < 3) {
+            ctx.fillStyle = 'rgba(155, 89, 182, 0.25)';
+            ctx.beginPath();
+            let pNearL = get3DPosition(i, 500); let pNearR = get3DPosition(i+1, 500);
+            ctx.moveTo(get3DPosition(i, 0).x, vpY); ctx.lineTo(get3DPosition(i+1, 0).x, vpY);
+            ctx.lineTo(pNearR.x, pNearR.y); ctx.lineTo(pNearL.x, pNearL.y); ctx.fill();
+        }
+    }
+    
+    if (!isPlaying) return; 
+
+    if (player.jumpFrames > 0) {
+        let p = get3DPosition(player.lane, player.z);
+        let w = 60 * p.scale; let h = 35 * p.scale;
+        ctx.fillStyle = '#8e44ad'; ctx.fillRect(p.x - w/2, p.y - h, w, h);
+        ctx.strokeStyle = '#fff'; ctx.strokeRect(p.x - w/2, p.y - h, w, h);
+    }
+    
+    ctx.fillStyle = '#fff200';
+    bullets.forEach(b => {
+        let p = get3DPosition(b.lane, b.z);
+        ctx.fillRect(p.x - (4*p.scale)/2, p.y - 20*p.scale, 4*p.scale, 20*p.scale);
+    });
+    
+    objects.forEach(obj => {
+        let p = get3DPosition(obj.lane, obj.z);
+        if (obj.type === 'obstacle') {
+            let w = 55 * p.scale; let h = 45 * p.scale;
+            ctx.fillStyle = '#34495e'; ctx.fillRect(p.x - w/2, p.y - h, w, h);
+            ctx.strokeStyle = '#00d2d3'; ctx.lineWidth = Math.max(1, 2 * p.scale);
+            ctx.strokeRect(p.x - w/2, p.y - h, w, h);
+        } else if (obj.type === 'enemy') {
+            let w = 45 * p.scale; let h = 45 * p.scale;
+            ctx.fillStyle = '#ff4757'; ctx.fillRect(p.x - w/2, p.y - h, w, h);
+            ctx.fillStyle = '#fff';
+            ctx.fillRect(p.x - 10*p.scale, p.y - 30*p.scale, 5*p.scale, 5*p.scale);
+            ctx.fillRect(p.x + 5*p.scale, p.y - 30*p.scale, 5*p.scale, 5*p.scale);
+        } else if (obj.type === 'wood') {
+            ctx.fillStyle = '#ff9f43'; ctx.beginPath();
+            ctx.arc(p.x, p.y - 10*p.scale, 12 * p.scale, 0, Math.PI * 2); ctx.fill();
+        } else if (obj.type === 'shield') {
+            ctx.fillStyle = '#54a0ff'; ctx.beginPath();
+            ctx.arc(p.x, p.y - 10*p.scale, 12 * p.scale, 0, Math.PI * 2); ctx.fill();
+        }
+    });
+
+    let pPos = get3DPosition(player.lane, player.z);
+    let playerY = pPos.y - (player.jumpFrames > 0 ? 45 * pPos.scale : 0);
+    let pSize = 18 * pPos.scale;
+    ctx.fillStyle = '#00ced1'; ctx.beginPath();
+    ctx.arc(pPos.x, playerY - pSize, pSize, 0, Math.PI * 2); ctx.fill();
+    if (player.shield > 0) {
+        ctx.strokeStyle = '#54a0ff'; ctx.lineWidth = Math.max(1, 3 * pPos.scale); ctx.stroke();
+    }
+}
+
+function gameLoop() {
+    update();
+    draw();
+    requestAnimationFrame(gameLoop);
+}
+
+function resetGame() {
+    player = { lane: 1, hp: 100, shield: 50, wood: 20, jumpFrames: 0, z: 440 };
+    objects = []; bullets = []; score = 0; frameCount = 0; stormTimer = 0;
+    stormActive = false; stormLane = -1; gameActive = true;
+    document.getElementById('game-over').style.display = 'none';
+    document.getElementById('storm-alert').style.display = 'none';
+}
+
+gameLoop();
+</script>
+
+</body>
+</html>
