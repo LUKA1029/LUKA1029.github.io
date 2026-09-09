@@ -10,9 +10,10 @@ title: ルカ/LUKA's Ch Home Page
 
 <div class="g-ytsubscribe" data-channelid="UCEHB3UmEtM_TLHqFjyRcxyA" data-layout="full" data-count="default"></div>
 
+
 # Highlight
 <div style="position: relative; width: 100%; padding-top:　56.25%;">
-<iframe src="https://www.youtube.com/embed/XScq4uJmRlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width:　100%; height:　100%;"></iframe>
+<iframe src="https://www.youtube.com/embed/XScq4uJmRlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%;"></iframe>
 </div>
 
 
