@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b16">
+  <meta name="description" content="LUKAの公式リンクポータル。CHAPPY、GEMITAN、CLAUDE-KYUNへアクセス。">
+  <title>LUKA LINK PORTAL</title>
+  <style>
+    :root{color-scheme:dark;--bg:#080b16;--panel:rgba(20,26,48,.72);--text:#f5f7ff;--muted:#a8b0ca;--line:rgba(255,255,255,.12)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;min-height:100vh;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text);background:radial-gradient(ellipse at 15% 5%,rgba(54,93,255,.22),transparent 38%),radial-gradient(ellipse at 90% 28%,rgba(177,65,255,.17),transparent 34%),var(--bg);overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,#000,transparent 90%)}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1060px,calc(100% - 36px));margin:auto;position:relative}
+    header{display:flex;justify-content:space-between;align-items:center;padding:24px 0}
+    .brand{font-weight:900;letter-spacing:.16em;font-size:1rem}.brand span{color:#8ea7ff}
+    .status{font-size:.75rem;color:#c6d0ff;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.04)}
+    .hero{text-align:center;padding:76px 0 46px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;color:#aebcff;letter-spacing:.22em;text-transform:uppercase;font-size:.72rem;font-weight:800}
+    .dot{width:7px;height:7px;border-radius:50%;background:#77f4d1;box-shadow:0 0 14px #77f4d1}
+    h1{font-size:clamp(2.5rem,8vw,5.8rem);line-height:.98;letter-spacing:-.065em;margin:22px 0 18px;font-weight:950}
+    h1 .gradient{background:linear-gradient(100deg,#fff 8%,#9bb3ff 48%,#d8a2ff 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{max-width:570px;margin:0 auto;color:var(--muted);line-height:1.9;font-size:clamp(.95rem,2.4vw,1.08rem)}
+    .scroll{margin-top:30px;color:#d8defa;font-size:.82rem;display:inline-flex;gap:10px;align-items:center}
+    .scroll b{font-size:1.2rem;animation:bob 1.6s infinite}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:22px 0 18px}
+    .section-head h2{margin:0;font-size:1.25rem;letter-spacing:.02em}
+    .section-head p{margin:0;color:var(--muted);font-size:.8rem}
+    .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .card{--accent:#8ea7ff;position:relative;isolation:isolate;display:flex;flex-direction:column;min-height:250px;padding:25px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025)),var(--panel);backdrop-filter:blur(18px);overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s}
+    .card:before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-80px;top:-90px;background:var(--accent);opacity:.16;filter:blur(45px);z-index:-1}
+    .card:hover{transform:translateY(-7px);border-color:color-mix(in srgb,var(--accent),white 20%);box-shadow:0 18px 50px rgba(0,0,0,.28),0 0 32px color-mix(in srgb,var(--accent),transparent 90%)}
+    .card.chappy{--accent:#75a4ff}.card.gemitan{--accent:#9b8cff}.card.claude{--accent:#ffb18b}
+    .card-top{display:flex;justify-content:space-between;align-items:center}
+    .icon{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;font-size:1.35rem;font-weight:900;background:color-mix(in srgb,var(--accent),transparent 86%);border:1px solid color-mix(in srgb,var(--accent),transparent 65%);color:var(--accent)}
+    .number{font-size:.7rem;letter-spacing:.15em;color:#8992b2}
+    .card h3{font-size:1.42rem;margin:23px 0 8px;letter-spacing:.02em}
+    .card p{color:var(--muted);font-size:.9rem;line-height:1.7;margin:0 0 22px}
+    .open{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:15px;border-top:1px solid var(--line);font-size:.88rem;font-weight:750}
+    .arrow{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.08);transition:transform .2s,background .2s}
+    .card:hover .arrow{transform:translate(3px,-2px);background:var(--accent);color:#080b16}
+    .bottom{margin:56px 0 28px;padding:24px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.035);display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .bottom strong{display:block;margin-bottom:5px}.bottom p{margin:0;color:var(--muted);font-size:.85rem;line-height:1.7}
+    .yt{white-space:nowrap;border-radius:999px;padding:12px 17px;background:#f5f7ff;color:#111629;font-weight:800;font-size:.85rem;transition:transform .2s}.yt:hover{transform:translateY(-2px)}
+    footer{padding:22px 0 30px;display:flex;justify-content:space-between;gap:15px;color:#77809e;font-size:.75rem;border-top:1px solid rgba(255,255,255,.07)}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+    @media(max-width:760px){.hero{padding:58px 0 38px}.cards{grid-template-columns:1fr;gap:12px}.card{min-height:205px;padding:22px}.card h3{margin-top:17px}.section-head{align-items:start;flex-direction:column;gap:6px}.bottom{align-items:flex-start;flex-direction:column}.yt{white-space:normal}header{padding:19px 0}.status{font-size:.68rem}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#" aria-label="LUKA LINK PORTAL ホーム">LUKA<span>.</span>LINK</a>
+      <div class="status">● OFFICIAL LINK PORTAL</div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="eyebrow"><span class="dot"></span> One portal. Three destinations.</div>
+        <h1><span class="gradient">LUKA</span><br>LINK PORTAL</h1>
+        <p class="lead">LUKAのWebサイトを、ここからひとつに。<br>行きたいサイトを選んでアクセスしてください。</p>
+        <a class="scroll" href="#links">EXPLORE LINKS <b>↓</b></a>
+      </section>
+      <section id="links" aria-labelledby="links-title">
+        <div class="section-head">
+          <h2 id="links-title">DESTINATIONS / リンク一覧</h2>
+          <p>3 LINKS · ALWAYS CONNECTED</p>
+        </div>
+        <div class="cards">
+          <a class="card chappy" href="https://luka1029.github.io/chappy" target="_blank" rel="noopener noreferrer">
+            <div class="card-top"><div class="icon">C</div><span class="number">LINK 01</span></div>
+            <h3>CHAPPY</h3>
+            <p>LUKAのクリエイターサイト。公式情報や関連リンクをチェック。</p>
+            <div class="open"><span>サイトを開く</span><span class="arrow">↗</span></div>
+          </a>
+          <a class="card gemitan" href="https://luka1029.github.io/gemitan" target="_blank" rel="noopener noreferrer">
+            <div class="card-top"><div class="icon">G</div><span class="number">LINK 02</span></div>
+            <h3>GEMITAN</h3>
+            <p>ゲーム実況・音楽・AIクリエイティブを楽しめるポータル。</p>
+            <div class="open"><span>サイトを開く</span><span class="arrow">↗</span></div>
+          </a>
+          <a class="card claude" href="https://luka1029.github.io/claudekyun" target="_blank" rel="noopener noreferrer">
+            <div class="card-top"><div class="icon">K</div><span class="number">LINK 03</span></div>
+            <h3>CLAUDE-KYUN</h3>
+            <p>もうひとつのLUKAサイトへ。クリックしてアクセス。</p>
+            <div class="open"><span>サイトを開く</span><span class="arrow">↗</span></div>
+          </a>
+        </div>
+      </section>
+      <section class="bottom">
+        <div><strong>もっとLUKAをチェック</strong><p>YouTubeの動画・配信情報や、公式リンク集もこちらから。</p></div>
+        <a class="yt" href="https://youtube.com/@luka1029ch" target="_blank" rel="noopener noreferrer">▶ YouTube チャンネルへ ↗</a>
+      </section>
+    </main>
+    <footer><span>© 2026 LUKA1029CH</span><span>MADE FOR THE LUKA COMMUNITY</span></footer>
+  </div>
+</body>
+</html>
